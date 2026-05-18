@@ -1,0 +1,56 @@
+2026-05-12 14:49:11:4911 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-12 14:51:10:5110 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-12 14:51:21:5121 [35mhttp[39m: [35mGET / 404 139 - 1.779 ms[39m
+2026-05-12 14:51:24:5124 [35mhttp[39m: [35mGET / 404 139 - 0.486 ms[39m
+2026-05-12 14:51:32:5132 [35mhttp[39m: [35mGET /funcionarios 401 50 - 1.260 ms[39m
+2026-05-12 14:51:32:5132 [35mhttp[39m: [35mGET /favicon.ico 404 150 - 0.363 ms[39m
+2026-05-12 14:51:38:5138 [35mhttp[39m: [35mGET /funcionario 404 150 - 0.253 ms[39m
+2026-05-12 14:51:49:5149 [31merror[39m: [31mErro ao criar funcionário: PrismaClientKnownRequestError: [39m
+[31mInvalid `prisma.funcionario.create()` invocation in[39m
+[31mC:\Users\joao.vfoliveira26\OneDrive - SENAC - SP\Documentos\Academia\src\services\funcionario.services.ts:6:48[39m
+
+[31m  3 [39m
+[31m  4 export const createFuncionario = async (nome: string, email: string, senha: string, telefone: string | undefined, cargo: string) => {[39m
+[31m  5   const hashedSenha = await bcrypt.hash(senha, 10);[39m
+[31m→ 6   const funcionario = await prisma.funcionario.create([39m
+[31m[39m
+2026-05-12 14:51:49:5149 [35mhttp[39m: [35mPOST /funcionarios 500 38 - 139.211 ms[39m
+2026-05-12 15:12:05:125 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-12 15:12:13:1213 [32minfo[39m: [32mFuncionário Joao criado com sucesso![39m
+2026-05-12 15:12:13:1213 [35mhttp[39m: [35mPOST /funcionarios 201 181 - 60.851 ms[39m
+2026-05-12 16:17:58:1758 [33mwarn[39m: [33mTentativa de envio de dados invalidos barrada pelo zod.[39m
+2026-05-12 16:17:58:1758 [35mhttp[39m: [35mPOST /funcionarios 400 274 - 1.275 ms[39m
+2026-05-18 14:32:50:3250 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-18 14:33:13:3313 [35mhttp[39m: [35mGET / 404 139 - 1.820 ms[39m
+2026-05-18 14:33:13:3313 [35mhttp[39m: [35mGET / 404 139 - 0.436 ms[39m
+2026-05-18 15:23:50:2350 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-18 15:23:52:2352 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-18 15:23:57:2357 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-18 15:24:00:240 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-18 15:24:45:2445 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-18 15:24:49:2449 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-18 15:24:51:2451 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-18 16:08:38:838 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m
+2026-05-18 16:21:17:2117 [35mhttp[39m: [35mPOST /funcionarios 409 33 - 96.178 ms[39m
+2026-05-18 16:26:05:265 [32minfo[39m: [32mFuncionário João Vitor criado com sucesso![39m
+2026-05-18 16:26:05:265 [35mhttp[39m: [35mPOST /funcionarios 201 199 - 45.261 ms[39m
+2026-05-18 16:27:55:2755 [33mwarn[39m: [33mTentativa de envio de dados invalidos barrada pelo zod.[39m
+2026-05-18 16:27:55:2755 [35mhttp[39m: [35mPOST /funcionarios 400 274 - 0.976 ms[39m
+2026-05-18 16:28:11:2811 [35mhttp[39m: [35mPOST /login 200 403 - 59.196 ms[39m
+2026-05-18 16:31:01:311 [32minfo[39m: [32mPlano Plano Mensal criado com sucesso![39m
+2026-05-18 16:31:01:311 [35mhttp[39m: [35mPOST /planos 201 189 - 8.228 ms[39m
+2026-05-18 16:31:56:3156 [35mhttp[39m: [35mGET /planos 200 191 - 3.806 ms[39m
+2026-05-18 16:32:36:3236 [35mhttp[39m: [35mGET /planos/1 200 189 - 3.901 ms[39m
+2026-05-18 16:33:29:3329 [33mwarn[39m: [33mTentativa de envio de dados invalidos barrada pelo zod.[39m
+2026-05-18 16:33:29:3329 [35mhttp[39m: [35mPOST /alunos 400 500 - 0.733 ms[39m
+2026-05-18 16:33:41:3341 [32minfo[39m: [32mAluno Maria Souza criado com sucesso![39m
+2026-05-18 16:33:41:3341 [35mhttp[39m: [35mPOST /alunos 201 183 - 54.985 ms[39m
+2026-05-18 16:34:11:3411 [35mhttp[39m: [35mGET /alunos 200 293 - 5.275 ms[39m
+2026-05-18 16:35:38:3538 [35mhttp[39m: [35mGET /alunos/1 200 369 - 4.952 ms[39m
+2026-05-18 16:37:01:371 [35mhttp[39m: [35mDELETE /alunos/1 200 41 - 6.983 ms[39m
+2026-05-18 16:38:28:3828 [35mhttp[39m: [35mDELETE /plano/1 404 149 - 0.724 ms[39m
+2026-05-18 16:38:33:3833 [35mhttp[39m: [35mDELETE /planos/1 200 41 - 6.486 ms[39m
+2026-05-18 16:39:17:3917 [35mhttp[39m: [35mGET /funcionarios 200 227 - 20.778 ms[39m
+2026-05-18 16:39:59:3959 [35mhttp[39m: [35mGET /funcionarios/1 200 181 - 3.702 ms[39m
+2026-05-18 16:41:09:419 [35mhttp[39m: [35mDELETE /funcionarios/1 200 48 - 5.675 ms[39m
+2026-05-18 16:47:09:479 [32minfo[39m: [32m🚀 Servidor a correr na porta 3000[39m

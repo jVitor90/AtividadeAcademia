@@ -1,0 +1,9 @@
+2026-05-12 14:51:49:5149 [31merror[39m: [31mErro ao criar funcionário: PrismaClientKnownRequestError: [39m
+[31mInvalid `prisma.funcionario.create()` invocation in[39m
+[31mC:\Users\joao.vfoliveira26\OneDrive - SENAC - SP\Documentos\Academia\src\services\funcionario.services.ts:6:48[39m
+
+[31m  3 [39m
+[31m  4 export const createFuncionario = async (nome: string, email: string, senha: string, telefone: string | undefined, cargo: string) => {[39m
+[31m  5   const hashedSenha = await bcrypt.hash(senha, 10);[39m
+[31m→ 6   const funcionario = await prisma.funcionario.create([39m
+[31m[39m
