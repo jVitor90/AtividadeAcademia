@@ -1,6 +1,6 @@
 # Academia API
 
-API REST para gerenciamento de academia — alunos, funcionários e planos.
+API REST para gerenciamento de academia de alunos, funcionários e planos.
 
 ## Requisitos
 
@@ -35,9 +35,9 @@ npx prisma migrate deploy
 ## Rodando
 
 ```bash
-npm run dev      # desenvolvimento
-npm run build    # build
-npm start        # produção
+npm run dev     
+npm run build    
+npm start       
 ```
 
 ## Endpoints
